@@ -28,8 +28,10 @@ Route::controller(AuthController::class)->group(function(){
 Route::controller(BookController::class)->group(function(){
     Route::prefix('books')->group(function () {
         Route::get('list', 'list');
-        Route::post('store', 'store');
-        Route::delete('delete/{book}', 'delete');
         Route::get('detail/{book}', 'singleBookDetail');
+        Route::middleware('auth:sanctum')->group(function () {
+            Route::post('store', 'store');
+            Route::delete('delete/{book}', 'delete');
+        });
     });
 });

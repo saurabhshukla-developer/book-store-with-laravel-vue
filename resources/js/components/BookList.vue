@@ -163,12 +163,14 @@
             },
 
             deleteBook(bookId){
-                axios.delete(axios.defaults.baseURL+'books/delete/'+bookId)
-                    .then(response => {
-                        if(response.request.status == 200){
-                            this.fetchBooks();
+                if(confirm("Do you really want to delete?")){
+                    axios.delete(axios.defaults.baseURL+'books/delete/'+bookId)
+                        .then(response => {
+                            if(response.request.status == 200){
+                                this.fetchBooks();
                         }
                     });
+                }
             },
 
             onInputChange(event) {
