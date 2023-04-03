@@ -11,9 +11,12 @@ This is a simple book store, built with Laravel, Vue.js, and Bootstrap 5. The st
 - View detailed book information, including cover image, description, author, genre, etc.
 - Logged-in users can perform CRUD operations on books, including adding new books, updating book information, and deleting books from the store.
 
+- [API Documentation](https://documenter.getpostman.com/view/8096032/2s93RWPBY3)
+
 ## Project Videos:
 - [Project Setup Video](https://drive.google.com/file/d/134hZQHAVH6ji4P2ou61wQwc-H2ZmdODk/view?usp=drivesdk)
 - [Project Demo Video](https://drive.google.com/file/d/13D-TLSrH_6_7OWB8ntSqi7RNGSXzwoNf/view?usp=drivesdk)
+- [API Documentation](https://documenter.getpostman.com/view/8096032/2s93RWPBY3)
 
 ## Installation Steps
 
